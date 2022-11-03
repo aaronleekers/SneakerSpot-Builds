@@ -22,11 +22,11 @@ const Create = () => {
   const [creatingListing, setCreatingListing] = useState(false);
 
   const { contract: nftCollection } = useContract(
-    "0x5e0d08BF82f40b80DF1beb1874D04C1416BCc8B2",
+    "0x645130442AB887378Fd5a0C0a1CbFf916C6b900D",
     "nft-collection"
   );
   const { contract: marketplace } = useContract(
-    "0x4719c1737a69b50Ed303E01f7725Cc8aEd855Be1",
+    "0x9dF10b311b7258ED6D5b41dD863844fc9F341C4d",
     "marketplace"
   );
 

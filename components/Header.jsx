@@ -10,7 +10,13 @@ export default function Header() {
 
   return (
     <div className={styles.header}>
-      <div className={styles.left}>
+      <div className={styles.center}>
+        <Link href="/Sell">
+          <a className={styles.headerItem}>Sell</a>
+        </Link>
+        <Link href="/listings">
+          <a className={styles.headerItem}>Listings</a>
+        </Link>
         <Link href="/" passHref>
           <img
             src={`/logo.png`}
@@ -18,27 +24,13 @@ export default function Header() {
             className={styles.headerLogo}
           />
         </Link>
-        <Link href="/listings">
-          <a className={styles.headerItem}>Listings</a>
+        <Link href="/UserVault">
+          <a className={styles.headerItem}>Vault</a>
         </Link>
+        <Link href="/Profile">
+          <a className={styles.headerItem}>Profile</a>
+        </Link>
+      </div>  
       </div>
-
-      <div className={styles.right}>
-        {address ? (
-          <>
-            <a
-              className={styles.secondaryButton}
-              onClick={() => disconnectWallet()}
-            >
-              Disconnect
-            </a>
-            <p className={styles.verticalSpacer}>|</p>
-            <p>{address.slice(0, 6).concat("...").concat(address.slice(-4))}</p>
-          </>
-        ) : (
-          <ConnectWallet accentColor="#5204BF" colorMode="dark" />
-        )}
-      </div>
-    </div>
   );
 }
