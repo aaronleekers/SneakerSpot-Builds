@@ -24,9 +24,6 @@ export default function Header() {
             className={styles.headerLogo}
           />
         </Link>
-        <Link href="/UserVault">
-          <a className={styles.headerItem}>Vault</a>
-        </Link>
         <Link href="/Profile">
           <a className={styles.headerItem}>Profile</a>
         </Link>
