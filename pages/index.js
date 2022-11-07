@@ -1,17 +1,10 @@
-import { useThirdweb } from "@thirdweb-dev/react";
- 
-  const HelloWorld = () => {
-    const { account, chainId } = useThirdweb();
- 
-    return (
-      <div>
-        <h1>Hello World</h1>
+import  react  from "react";
 
-        <p>Account: {account}</p>
-        <p>ChainId: {chainId}</p>
-      </div>
-    );
-  };
- 
-  export default HelloWorld;
-
+export default function Homepage() {
+  
+  return (
+    <div>
+      <h1>Homepage</h1>
+    </div>
+  );
+}
