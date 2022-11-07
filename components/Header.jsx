@@ -14,16 +14,15 @@ export default function Header() {
         <Link href="/Sell">
           <a className={styles.headerItem}>Sell</a>
         </Link>
+        <Link href="/listings">
+          <a className={styles.headerItem}>Listings</a>
+        </Link>
         <Link href="/" passHref>
           <img
             src={`/logo.png`}
             alt="Thirdweb Logo"
             className={styles.headerLogo}
           />
-        <Link href="/listings">
-          <a className={styles.headerItem}>Listings</a>
-        </Link>
-        
         </Link>
         <Link href="/Profile">
           <a className={styles.headerItem}>Profile</a>
