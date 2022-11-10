@@ -187,9 +187,7 @@ const Create = () => {
           <h1 className={styles.ourCollection}>
             Upload your NFT to the marketplace:
           </h1>
-            <div>
-              <ConnectWallet/>
-            </div>
+          <ConnectWallet accentColor="#f213a4" colorMode="dark" />
           {/* Toggle between direct listing and auction listing */}
           <div className={styles.listingTypeContainer}>
             <input
