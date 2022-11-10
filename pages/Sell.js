@@ -90,7 +90,7 @@ const Create = () => {
       // For Direct Listings:
       if (listingType.value === "directListing") {
         transactionResult = await createDirectListing(
-          "0x5e0d08BF82f40b80DF1beb1874D04C1416BCc8B2",
+          "0x9dF10b311b7258ED6D5b41dD863844fc9F341C4d",
           mintedTokenId,
           price.value
         );
@@ -99,7 +99,7 @@ const Create = () => {
       // For Auction Listings:
       if (listingType.value === "auctionListing") {
         transactionResult = await createAuctionListing(
-          "0x5e0d08BF82f40b80DF1beb1874D04C1416BCc8B2",
+          "0x9dF10b311b7258ED6D5b41dD863844fc9F341C4d",
           mintedTokenId,
           price.value
         );
