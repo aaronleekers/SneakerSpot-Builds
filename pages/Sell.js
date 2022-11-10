@@ -7,6 +7,7 @@ import {
   useSDK,
   useCreateDirectListing,
   useCreateAuctionListing,
+  ConnectWallet,
 } from "@thirdweb-dev/react";
 import { ChainId, NATIVE_TOKEN_ADDRESS } from "@thirdweb-dev/sdk";
 import { useRouter } from "next/router";
@@ -187,7 +188,7 @@ const Create = () => {
             Upload your NFT to the marketplace:
           </h1>
             <div>
-              <Connectwallet/>
+              <ConnectWallet/>
             </div>
           {/* Toggle between direct listing and auction listing */}
           <div className={styles.listingTypeContainer}>
